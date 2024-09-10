@@ -1,9 +1,9 @@
-## Docker
+# Docker
 Là nền tảng cho developers và sysadmin để phát triển, triển khai và chạy ứng dụng với vùng chứa. Nó cho phép tạo môi trường độc lập và tách biệt để khởi chạy và phát triển ứng dụng và môi trường này gọi là container.
 Khi cần triển khia bất kỳ máy chủ nào chỉ cần chạy container của Docker thì ứng dụng sẽ được khởi chạy ngay lập tức.
-## Kiến trúc của Docker
+# Kiến trúc của Docker
 Kiến trúc của Docker dựa trên mô hình client-server, giúp phát triển, triển khai, và quản lý các container ứng dụng 1 cách hiệu quả và dễ dàng.
-# Các thành phần chính trong kiến trúc của Docker là:
+## Các thành phần chính trong kiến trúc của Docker là:
 - Docker Client : Là giao diện người dùng sử dụng để tương tác với Docker.
     + Các lệnh của Docker Client: docker build, docker run, docker pull sẽ được chuyển đến Docker Daemon xử lý.
     + Docker Client có thể giao tiếp với nhiểu Docker Daemon
