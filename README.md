@@ -27,3 +27,27 @@ Kiến trúc của Docker dựa trên mô hình client-server, giúp phát tri�
 - Docker Network và Volumes:
   + Docker Network: Docker cung cấp cơ chế để kết nối các container với nhau hoặc với thế giới bên ngoài thông qua mạng. Mỗi container có thể được đặt vào một hoặc nhiều mạng tùy vào cấu hình của bạn.
   + Docker Volumes: Volumes cho phép lưu trữ dữ liệu ngoài container. Điều này giúp giữ lại dữ liệu ngay cả khi container bị xóa hoặc tắt.
+
+# Các khái niệm cơ bản của Docker
+- Docker Engine: Thành phần cốt lõi của Docker, cung cấp nền tảng để chạy và quản lý các container. Docker Engine bao gồm ba thành phần chính:
++ Server: Là daemon thực thi các container (dockerd).
++ REST API: Giao diện cho phép người dùng tương tác với daemon của Docker.
++ Client: Là công cụ dòng lệnh (CLI) để người dùng thao tác với Docker.
+
+- Container: Một đơn vị đóng gói ứng dụng cùng với tất cả các phụ thuộc và cấu hình cần thiết, giúp đảm bảo ứng dụng có thể chạy ổn định và nhất quán trên bất kỳ môi trường nào.
+
+- Image: Là mẫu (template) chứa tất cả các thành phần như mã nguồn, thư viện, biến môi trường, cấu hình... cần để tạo và chạy một container. Docker Image là bất biến và có thể chia sẻ, phân phối trên các hệ thống.
+
+- Dockerfile: Là tập tin văn bản chứa các chỉ dẫn để Docker biết cách tạo ra một Docker Image. Trong Dockerfile, bạn định nghĩa các bước như cài đặt phần mềm, sao chép mã nguồn, thiết lập cấu hình cho container.
+
+- Docker Hub: Là registry chính thức của Docker, nơi chứa các Docker Images có sẵn hoặc do người dùng tải lên. Bạn có thể kéo (pull) các images từ Docker Hub về để sử dụng hoặc đẩy (push) các images tự tạo lên để chia sẻ.
+
+- Volume: Là cơ chế lưu trữ dữ liệu ngoài container để đảm bảo dữ liệu không bị mất khi container bị xóa. Volumes cho phép container truy cập dữ liệu liên tục, bất kể vòng đời của container.
+
+- Network: Docker cung cấp khả năng tạo các mạng riêng giữa các container để chúng có thể giao tiếp với nhau một cách an toàn và kiểm soát được việc giao tiếp này.
+
+- Registry: Là nơi lưu trữ các Docker images. Docker Hub là registry công cộng phổ biến nhất, nhưng bạn cũng có thể thiết lập registry riêng (private registry) cho tổ chức của mình.
+
+- Docker Compose: Là công cụ giúp bạn định nghĩa và chạy các ứng dụng Docker có nhiều container, thông qua một file cấu hình YAML. Docker Compose đơn giản hóa việc quản lý các container có liên quan.
+
+- Swarm: Là công cụ tích hợp của Docker cho phép quản lý và triển khai các ứng dụng container theo mô hình phân tán, bao gồm việc phân phối và mở rộng các container trên nhiều host (máy chủ).
